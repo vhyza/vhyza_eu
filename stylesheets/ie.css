@@ -9,11 +9,3 @@
 #business_card img {
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=135, Strength=3);
 }
-
-#business_card .left {
-  margin-top: 40px;
-}
-
-#business_card .right {
-  margin-top: 15px;
-}
