@@ -62,3 +62,63 @@
 	    font-weight: normal;
 	    font-style: normal; }
 */
+
+
+/* Business card CSS */
+
+#business_card {
+  width: 650px;
+  background-color: #E7E7E7;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  margin: 5em auto;
+}
+
+#business_card a {
+  text-decoration: none;
+  color: #444444;
+}
+
+#business_card .header {
+  height: 90px;
+  background-color: #333333;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+#business_card .header h1 {
+  font-size: 40px;
+  padding-top: 15px;
+  color: #CCCCCC;
+  text-align: center;
+}
+
+#business_card td {
+  padding-left: 2em;
+}
+
+#business_card .bold {
+  font-size: 20px;
+  padding-left: 0em;
+}
+
+#business_card img {
+  width: 250px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  margin: 10px;
+}
+
+#business_card .left {
+  float: left;  
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+#business_card .right {
+  margin-right: 1em;
+  float: right;
+}
