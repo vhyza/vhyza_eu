@@ -99,9 +99,10 @@
   padding-left: 2em;
 }
 
-#business_card .bold {
+#business_card td.bold {
   font-size: 20px;
   padding-left: 0em;
+  width: 4em;
 }
 
 #business_card img {
