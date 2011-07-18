@@ -118,6 +118,10 @@
   margin-top: 15px;
 }
 
+#business_card .credentials, .web {
+  margin-top: 1.5em;
+}
+
 #business_card .right {
   margin-right: 1em;
   margin-top: 15px;
