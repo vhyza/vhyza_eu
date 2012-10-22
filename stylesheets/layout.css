@@ -103,6 +103,7 @@ body {
 }
 
 #business_card {
+  position: relative;
   width: 650px;
   background-color: white;
 
@@ -112,6 +113,10 @@ body {
 #business_card a {
   text-decoration: none;
   color: #444444;
+}
+
+#business_card .name h2 {
+  position: relative;
 }
 
 #business_card .header {
@@ -239,4 +244,58 @@ span.tucked-corners {
       -ms-transform: rotate(135deg);
        -o-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+/* http://codepen.io/megasmack/pen/ELktI */
+
+.avatar {
+  cursor: pointer;
+  position: absolute;
+  z-index: 20;
+  top: 8px;
+  left: 31px;
+  display: block;
+
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+
+  text-decoration: none;
+}
+
+.avatar .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  border: 6px solid #8e1213;
+  border-radius: 25%;
+  width: 0px;
+  height: 0px;
+  background-image: url('../images/vhyza.jpg');
+  background-position: 50% 50%;
+
+  -webkit-background-size: 90px;
+  -moz-background-size: 90px;
+  background-size: 90px;
+
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.avatar:hover .image {
+  margin: -50px 0 0 -45px;
+  width: 90px;
+  height: 100px;
+
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,.3), inset 0 0 20px rgba(0,0,0,.7);
+  box-shadow: 2px 2px 8px rgba(0,0,0,.3), inset 0 0 20px rgba(0,0,0,.7);
 }
