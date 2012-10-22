@@ -291,7 +291,7 @@ span.tucked-corners {
   transition: all 400ms ease-in-out;
 }
 
-.avatar:hover .image {
+.avatar .image.hover {
   margin: -50px 0 0 -45px;
   width: 90px;
   height: 100px;
