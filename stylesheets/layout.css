@@ -72,29 +72,6 @@
   a:hover, a:focus { color: #000; }
   p a, p a:visited { line-height: inherit; }
 
-/* #Media Queries
-================================================== */
-
-	/* iPad Portrait/Browser */
-	@media only screen and (min-width: 768px) and (max-width: 991px) {}
-
-	/* Mobile/Browser */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape/Browser */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Anything smaller than standard 960 */
-	@media only screen and (max-width: 959px) {}
-
-	/* iPad Portrait Only */
-	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
-
-	/* Mobile Only */
-	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
-
-	/* Mobile Landscape Only */
-	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
 
 /* Business card CSS */
 
@@ -299,3 +276,63 @@ span.tucked-corners {
   -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,.3), inset 0 0 20px rgba(0,0,0,.7);
   box-shadow: 2px 2px 8px rgba(0,0,0,.3), inset 0 0 20px rgba(0,0,0,.7);
 }
+
+/* #Media Queries
+================================================== */
+
+/* iPad Portrait/Browser */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile/Browser */
+@media only screen and (max-width: 660px) {
+  #business_card {
+    width: 320px;
+  }
+
+  #business_card .header {
+    height: 170px;
+  }
+
+  #business_card .right {
+    margin-left: 10px;
+  }
+
+  #business_card .right img {
+    width: 280px;
+  }
+
+  #business_card .right {
+    float: left;
+  }
+
+  span.tucked-corners {
+    width: 320px;
+  }
+
+  .bottom-corners:before {
+    bottom: -420px;
+  }
+
+  .bottom-corners:after {
+    bottom: -420px;
+  }
+
+  .avatar {
+    left: 48px;
+  }
+}
+
+/* Mobile Landscape/Browser */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Anything smaller than standard 960 */
+@media only screen and (max-width: 959px) {}
+
+/* iPad Portrait Only */
+@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
+
+/* Mobile Only */
+@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
+
+/* Mobile Landscape Only */
+@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
