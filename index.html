@@ -13,20 +13,41 @@
     <![endif]-->
     <script src="javascripts/modernizr.custom.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-    <script>$( function() {
-      $('#business_card').hover(
-        function () {
-          $('.avatar .image').toggleClass("hover");
-        }
-      );
-    });
+    <script src="javascripts/cufon-yui.js"></script>
+    <script src="javascripts/engebrechtre.font.js"></script>
+
+    <script>
+      $( function() {
+        Cufon.replace('#business_card div.credentials, div.web, div.name, div.header');
+        Cufon.now();
+
+        $('#business_card').hover(
+          function () {
+            $('.avatar .image').toggleClass("hover");
+          }
+        );
+      });
+
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24777440-1']);
+      _gaq.push(['_setDomainName', '.vhyza.eu']);
+      _gaq.push(['_setAllowHash', false]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
+
   </head>
   <body>
     <div class="container">
       <div class="sixteen columns">
         <div id="business_card" class="tucked-corners top-corners">
-          <span class="tucked-corners bottom-corners">
+          <div class="tucked-corners bottom-corners">
           <span class="avatar"><span class="image"></span></span>
           <div class="header">
             <h1>Independent Software Developer</h1>
@@ -66,7 +87,7 @@
                   </tr>
                   <tr>
                     <td class="bold">LinkedIn</td>
-                    <td><a href="http://www.linkedin.com/in/vhyza" target="_blank">www.linkedin.com/in/vhyza</td>
+                    <td><a href="http://www.linkedin.com/in/vhyza" target="_blank">www.linkedin.com/in/vhyza></a></td>
                   </tr>
                   <tr>
                     <td class="bold">GitHub</td>
@@ -76,35 +97,14 @@
               </div>
             </div>
             <div class="right">
-              <a href="vhyza.vcf"><img src="images/qr_code.png"></a>
+              <a href="vhyza.vcf"><img src="images/qr_code.png" alt="QR Code"></a>
             </div>
           </div>
-          </span>
+          </div>
           <div style="clear:both"></div>
         </div>
       </div>
     </div><!-- container -->
-
-    <script src="javascripts/cufon-yui.js"></script>
-    <script src="javascripts/engebrechtre.font.js"></script>
-    <script type="text/javascript" charset="utf-8">
-      Cufon.replace('#business_card div.credentials, div.web, div.name, div.header');
-    </script>
   </body>
-  <script type="text/javascript"> Cufon.now(); </script>
-  <script type="text/javascript">
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-24777440-1']);
-    _gaq.push(['_setDomainName', '.vhyza.eu']);
-    _gaq.push(['_setAllowHash', false]);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
 </html>
