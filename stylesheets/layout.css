@@ -153,7 +153,7 @@ div.tucked-corners {
      -moz-box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
           box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
 }
-div.tucked-corners {
+.tucked-corners {
   display: block;
   height: 380px;
   position: relative;
@@ -307,14 +307,15 @@ div.tucked-corners {
 
   .tucked-corners {
     width: 320px;
+    height: 100%;
   }
 
   .bottom-corners:before {
-    bottom: -420px;
+    bottom: -625px;
   }
 
   .bottom-corners:after {
-    bottom: -420px;
+    bottom: -625px;
   }
 
   .avatar {
